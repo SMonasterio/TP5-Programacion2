@@ -4,9 +4,9 @@
  */
 package tp5;
 
-import tp5.ejercicio2.Bateria;
-import tp5.ejercicio2.Celular;
-import tp5.ejercicio2.Usuario;
+import tp5.ejercicio3.Autor;
+import tp5.ejercicio3.Editorial;
+import tp5.ejercicio3.Libro;
 
 /**
  *
@@ -26,15 +26,21 @@ public class TP5 {
 
         System.out.println(pasaporte);
         System.out.println(titular.getPasaporte());*/
-        
-        Bateria bateria = new Bateria("BL-45F1F", 3000);
+
+ /*Bateria bateria = new Bateria("BL-45F1F", 3000);
         Celular celular = new Celular("357894561234567", "LG", "K10", bateria);
         Usuario usuario = new Usuario("Sofia", "12.123.123");
 
         celular.setUsuario(usuario);
 
         System.out.println(celular);
-        System.out.println(usuario.getCelular());
+        System.out.println(usuario.getCelular());*/
+        Autor autor = new Autor("Gabriel García Márquez", "Colombiana");
+        Editorial editorial = new Editorial("Sudamericana", "Buenos Aires, Argentina");
+
+        Libro libro = new Libro("Cien Años de Soledad", "978-9871138663", autor, editorial);
+
+        System.out.println(libro);
     }
 
 }
