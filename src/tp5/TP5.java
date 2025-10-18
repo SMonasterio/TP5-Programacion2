@@ -4,9 +4,8 @@
  */
 package tp5;
 
-import tp5.ejercicio4.Banco;
-import tp5.ejercicio4.Cliente;
-import tp5.ejercicio4.TarjetaDeCredito;
+import tp5.ejercicio5.Computadora;
+import tp5.ejercicio5.Propietario;
 
 /**
  *
@@ -41,14 +40,21 @@ public class TP5 {
         Libro libro = new Libro("Cien Años de Soledad", "978-9871138663", autor, editorial);
 
         System.out.println(libro);*/
-        Banco banco = new Banco("Banco Nación", "30-50000123-9");
+ /*Banco banco = new Banco("Banco Nación", "30-50000123-9");
         TarjetaDeCredito tarjeta = new TarjetaDeCredito("1234-5678-9012-3456", "12/28", banco);
         Cliente cliente = new Cliente("Sofia", "12.123.123");
 
-        tarjeta.setCliente(cliente); // Establece la relación bidireccional
-
+        tarjeta.setCliente(cliente); 
+        
         System.out.println(tarjeta);
-        System.out.println(cliente.getTarjeta());
+        System.out.println(cliente.getTarjeta());*/
+        Computadora compu = new Computadora("HP", "SN12345", "ASUS PRIME B450M", "AMD B450");
+        Propietario propietario = new Propietario("Sofia", "12.123.123");
+
+        compu.setPropietario(propietario);
+
+        System.out.println(compu);
+        System.out.println(propietario.getComputadora());
     }
 
 }
