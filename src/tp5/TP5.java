@@ -4,9 +4,9 @@
  */
 package tp5;
 
-import tp5.ejercicio3.Autor;
-import tp5.ejercicio3.Editorial;
-import tp5.ejercicio3.Libro;
+import tp5.ejercicio4.Banco;
+import tp5.ejercicio4.Cliente;
+import tp5.ejercicio4.TarjetaDeCredito;
 
 /**
  *
@@ -35,12 +35,20 @@ public class TP5 {
 
         System.out.println(celular);
         System.out.println(usuario.getCelular());*/
-        Autor autor = new Autor("Gabriel García Márquez", "Colombiana");
+ /*Autor autor = new Autor("Gabriel García Márquez", "Colombiana");
         Editorial editorial = new Editorial("Sudamericana", "Buenos Aires, Argentina");
 
         Libro libro = new Libro("Cien Años de Soledad", "978-9871138663", autor, editorial);
 
-        System.out.println(libro);
+        System.out.println(libro);*/
+        Banco banco = new Banco("Banco Nación", "30-50000123-9");
+        TarjetaDeCredito tarjeta = new TarjetaDeCredito("1234-5678-9012-3456", "12/28", banco);
+        Cliente cliente = new Cliente("Sofia", "12.123.123");
+
+        tarjeta.setCliente(cliente); // Establece la relación bidireccional
+
+        System.out.println(tarjeta);
+        System.out.println(cliente.getTarjeta());
     }
 
 }
