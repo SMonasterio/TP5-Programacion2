@@ -4,8 +4,9 @@
  */
 package tp5;
 
-import tp5.ejercicio5.Computadora;
-import tp5.ejercicio5.Propietario;
+import tp5.ejercicio6.Cliente;
+import tp5.ejercicio6.Mesa;
+import tp5.ejercicio6.Reserva;
 
 /**
  *
@@ -48,13 +49,18 @@ public class TP5 {
         
         System.out.println(tarjeta);
         System.out.println(cliente.getTarjeta());*/
-        Computadora compu = new Computadora("HP", "SN12345", "ASUS PRIME B450M", "AMD B450");
+ /*Computadora compu = new Computadora("HP", "SN12345", "ASUS PRIME B450M", "AMD B450");
         Propietario propietario = new Propietario("Sofia", "12.123.123");
 
         compu.setPropietario(propietario);
 
         System.out.println(compu);
-        System.out.println(propietario.getComputadora());
+        System.out.println(propietario.getComputadora());*/
+        Cliente cliente = new Cliente("Juan Pérez", "3815123456");
+        Mesa mesa = new Mesa(7, 4);
+        Reserva reserva = new Reserva("2025-10-18", "21:00", cliente, mesa);
+
+        System.out.println(reserva);
     }
 
 }
