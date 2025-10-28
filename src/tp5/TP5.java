@@ -4,9 +4,8 @@
  */
 package tp5;
 
-import tp5.ejercicio7.Conductor;
-import tp5.ejercicio7.Motor;
-import tp5.ejercicio7.Vehiculo;
+import ejercicio10.CuentaBancaria;
+import ejercicio10.Titular;
 
 /**
  *
@@ -68,14 +67,36 @@ public class TP5 {
 
         System.out.println(reserva);*/
         //EJERCICIO 7
-        Motor motor = new Motor("V8", "MTR-5567");
+        /*Motor motor = new Motor("V8", "MTR-5567");
         Vehiculo vehiculo = new Vehiculo("AB123CD", "Toyota Corolla", motor);
         Conductor conductor = new Conductor("Laura Gómez", "LIC-998877");
 
         vehiculo.setConductor(conductor);
 
         System.out.println(vehiculo);
-        System.out.println(conductor);
+        System.out.println(conductor);*/
+        
+        
+        //EJERCICIO 8
+        /*Usuario usuario = new Usuario("Ana Pérez", "ana.perez@mail.com");
+        Documento doc = new Documento("Contrato de Servicios", "Contenido del contrato...", usuario);
+
+        System.out.println(doc);*/
+        
+        //EJERCICIO 9
+        /*Paciente paciente = new Paciente("María López", "OSDE");
+        Profesional profesional = new Profesional("Dr. Ramírez", "Pediatría");
+        CitaMedica cita = new CitaMedica("2025-10-20", "09:30", paciente, profesional);
+
+        System.out.println(cita);*/
+        
+        //EJERCICIO 10
+        Titular titular = new Titular("Laura Gómez", "32165498");
+        CuentaBancaria cuenta = new CuentaBancaria("123000456789", 50000.0, "abc123", "2025-10-17");
+        cuenta.setTitular(titular);
+
+        System.out.println(cuenta);
+        System.out.println("Cuenta del titular: " + titular.getCuenta().getCbu());
     }
 
 }
