@@ -4,9 +4,8 @@
  */
 package tp5;
 
-import tp5.ejercicio11.Artista;
-import tp5.ejercicio11.Cancion;
-import tp5.ejercicio11.Reproductor;
+import tp5.ejercicio13.GeneradorQR;
+import tp5.ejercicio13.Usuario;
 
 /**
  *
@@ -94,14 +93,23 @@ public class TP5 {
 
         System.out.println(cuenta);
         System.out.println("Cuenta del titular: " + titular.getCuenta().getCbu());*/
-        
-
         //EJERCICIO 11
-        Artista artista = new Artista("Gustavo Cerati", "Rock");
+        /*Artista artista = new Artista("Gustavo Cerati", "Rock");
         Cancion cancion = new Cancion("Crimen", artista);
         Reproductor reproductor = new Reproductor();
 
-        reproductor.reproducir(cancion);
+        reproductor.reproducir(cancion);*/
+        //EJERCICIO 12
+        /*Contribuyente contribuyente = new Contribuyente("Carlos Díaz", "20-32165478-9");
+        Impuesto impuesto = new Impuesto(150000.0, contribuyente);
+
+        Calculadora calculadora = new Calculadora();
+        calculadora.calcular(impuesto);*/
+        //EJERCICIO 13
+        Usuario usuario = new Usuario("Lucía Fernández", "lucia@mail.com");
+        GeneradorQR generador = new GeneradorQR();
+
+        generador.generar("QR-987654321", usuario);
     }
 
 }
