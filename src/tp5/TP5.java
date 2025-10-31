@@ -4,8 +4,8 @@
  */
 package tp5;
 
-import tp5.ejercicio13.GeneradorQR;
-import tp5.ejercicio13.Usuario;
+import tp5.ejercicio14.EditorVideo;
+import tp5.ejercicio14.Proyecto;
 
 /**
  *
@@ -106,10 +106,14 @@ public class TP5 {
         Calculadora calculadora = new Calculadora();
         calculadora.calcular(impuesto);*/
         //EJERCICIO 13
-        Usuario usuario = new Usuario("Lucía Fernández", "lucia@mail.com");
+        /*Usuario usuario = new Usuario("Lucía Fernández", "lucia@mail.com");
         GeneradorQR generador = new GeneradorQR();
 
-        generador.generar("QR-987654321", usuario);
+        generador.generar("QR-987654321", usuario);*/
+        //EJERCICIO 14
+        Proyecto proyecto = new Proyecto("Documental Naturaleza", 45);
+        EditorVideo editor = new EditorVideo();
+        editor.exportar("MP4", proyecto);
     }
 
 }
