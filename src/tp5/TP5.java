@@ -4,8 +4,9 @@
  */
 package tp5;
 
-import ejercicio10.CuentaBancaria;
-import ejercicio10.Titular;
+import tp5.ejercicio11.Artista;
+import tp5.ejercicio11.Cancion;
+import tp5.ejercicio11.Reproductor;
 
 /**
  *
@@ -75,28 +76,32 @@ public class TP5 {
 
         System.out.println(vehiculo);
         System.out.println(conductor);*/
-        
-        
         //EJERCICIO 8
         /*Usuario usuario = new Usuario("Ana Pérez", "ana.perez@mail.com");
         Documento doc = new Documento("Contrato de Servicios", "Contenido del contrato...", usuario);
 
         System.out.println(doc);*/
-        
         //EJERCICIO 9
         /*Paciente paciente = new Paciente("María López", "OSDE");
         Profesional profesional = new Profesional("Dr. Ramírez", "Pediatría");
         CitaMedica cita = new CitaMedica("2025-10-20", "09:30", paciente, profesional);
 
         System.out.println(cita);*/
-        
         //EJERCICIO 10
-        Titular titular = new Titular("Laura Gómez", "32165498");
+        /*Titular titular = new Titular("Laura Gómez", "32165498");
         CuentaBancaria cuenta = new CuentaBancaria("123000456789", 50000.0, "abc123", "2025-10-17");
         cuenta.setTitular(titular);
 
         System.out.println(cuenta);
-        System.out.println("Cuenta del titular: " + titular.getCuenta().getCbu());
+        System.out.println("Cuenta del titular: " + titular.getCuenta().getCbu());*/
+        
+
+        //EJERCICIO 11
+        Artista artista = new Artista("Gustavo Cerati", "Rock");
+        Cancion cancion = new Cancion("Crimen", artista);
+        Reproductor reproductor = new Reproductor();
+
+        reproductor.reproducir(cancion);
     }
 
 }
